@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: User
+      host: blessingmongo
+      port: 27017
