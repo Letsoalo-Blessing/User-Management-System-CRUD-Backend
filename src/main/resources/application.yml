@@ -1,6 +1,14 @@
-spring:
-  data:
-    mongodb:
-      database: User
-      host: blessingmongo
-      port: 27017
+version: "5"
+services:
+ mymongodb:
+   image: mongo:latest
+   container_name: "blessingmongo"
+   ports:
+     - 27017:27017
+ springboot-mongodb:
+   image: user-docker
+   container_name: user-docker
+   ports:
+     - 8080:8080
+   links:
+     - mongo
