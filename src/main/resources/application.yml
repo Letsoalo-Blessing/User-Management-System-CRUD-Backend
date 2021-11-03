@@ -11,8 +11,4 @@ services:
    ports:
      - 8080:8080
    links:
-<<<<<<< HEAD
      - mongo
-=======
-     - mongo
->>>>>>> 4180b0546c4599eb0b81de9da9905504b6f946a6
