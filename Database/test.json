@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "61827b1627674236c34fcbca"
+  },
+  "name": "Blessing",
+  "_class": "com.data.Model.Test"
+},{
+  "_id": {
+    "$oid": "61827cf644622b1c3d60f932"
+  },
+  "name": "Dave",
+  "dob": {
+    "$date": "2021-04-02T22:00:00Z"
+  },
+  "_class": "com.data.Model.Test"
+}]

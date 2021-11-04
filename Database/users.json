@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "618383d4203c6e1763dd4d35"
+  },
+  "username": "Dave",
+  "email": "Dave@gmail.com",
+  "password": "$2a$10$iUjvhoxuum1n4hQSlK0MFu8639cffKWzIVRgiI283S8NwpHxd0I4q",
+  "title": "Mr",
+  "birthdate": {
+    "$date": "2021-04-02T22:00:00Z"
+  },
+  "roles": [
+    {
+      "$ref": "roles",
+      "$id": {
+        "$oid": "617a8478606c253ce7081999"
+      }
+    }
+  ],
+  "_class": "com.data.Model.User"
+},{
+  "_id": {
+    "$oid": "61839894203c6e1763dd4d3a"
+  },
+  "username": "Bless",
+  "email": "Bless@gmail.com",
+  "password": "$2a$10$SchGMVkGiihbr2nFgg9yaeoJb9VOKpeiNEASqQ46qIrkOREniGlXi",
+  "title": "Mrs",
+  "roles": [
+    {
+      "$ref": "roles",
+      "$id": {
+        "$oid": "617a8478606c253ce7081999"
+      }
+    }
+  ],
+  "_class": "com.data.Model.User"
+}]
