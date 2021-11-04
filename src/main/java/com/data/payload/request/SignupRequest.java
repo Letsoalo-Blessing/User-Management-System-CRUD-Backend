@@ -1,5 +1,6 @@
 package com.data.payload.request;
 
+import java.time.LocalDate;
 import java.util.Set;
 
 import javax.validation.constraints.Email;
@@ -29,7 +30,7 @@ public class SignupRequest {
   	private String title;
   	
  
-  	private String birthdate;
+    private LocalDate  birthdate;
   	
     public String getUsername() {
         return username;
@@ -71,11 +72,11 @@ public class SignupRequest {
 		this.title = title;
 	}
 
-	public String getBirthdate() {
+	public LocalDate getBirthdate() {
 		return birthdate;
 	}
 
-	public void setBirthdate(String birthdate) {
+	public void setBirthdate(LocalDate birthdate) {
 		this.birthdate = birthdate;
 	}
     

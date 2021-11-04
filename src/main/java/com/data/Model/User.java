@@ -1,11 +1,13 @@
 package com.data.Model;
 
+import java.time.LocalDate;
 import java.util.*;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -16,7 +18,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "users")
 public class User {
   @Id
-  private String id;
+  private ObjectId id;
 
   @NotBlank
   @Size(max = 20)
@@ -35,7 +37,7 @@ public class User {
 	@Size(max=10)
 	private String title;
 	
-	private String birthdate;
+  private LocalDate birthdate; //2021-01-03
 
   @DBRef
   private Set<Role> roles = new HashSet<>();
@@ -44,7 +46,7 @@ public class User {
   }
 
   
-public User(String username, String email, String password,String title, String birthdate) {
+public User(String username, String email, String password,String title, LocalDate birthdate) {
 	super();
 	this.username = username;
 	this.email = email;
@@ -62,11 +64,11 @@ public User(String username, String email, String password,String title, String 
   
   
 
-  public String getId() {
+  public ObjectId getId() {
     return id;
   }
 
-  public void setId(String id) {
+  public void setId(ObjectId id) {
     this.id = id;
   }
 
@@ -103,11 +105,11 @@ public void setTitle(String title) {
 	this.title = title;
 }
 
-public String getBirthdate() {
+public LocalDate getBirthdate() {
 	return birthdate;
 }
 
-public void setBirthdate(String birthdate) {
+public void setBirthdate(LocalDate birthdate) {
 	this.birthdate = birthdate;
 }
 
