@@ -11,8 +11,4 @@ services:
    ports:
      - 8081:8080
    links:
-<<<<<<< HEAD
      - blessingmongo
-=======
-     - mongo
->>>>>>> c1e11958a15bab7885a42b4dfda5de349ebc1e75
